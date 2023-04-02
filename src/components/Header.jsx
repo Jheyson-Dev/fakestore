@@ -6,7 +6,7 @@ import { CartContext } from '../context/CartContext';
 export const Header = () => {
   const { cart } = useContext(CartContext);
   return (
-    <header className='bg-blue-primary h-20 sticky top-0 '>
+    <header className='bg-blue-primary h-20 sticky top-0 z-10'>
       <div className='container mx-auto flex items-center h-full justify-between lg:px-36'>
         <div>
           <img
