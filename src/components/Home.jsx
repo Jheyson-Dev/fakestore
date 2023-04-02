@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useFecth } from '../hooks/UseFecth';
 import { Link, useNavigate } from 'react-router-dom';
-import 'react-loading-skeleton/dist/skeleton.css';
-import Skeleton from 'react-loading-skeleton';
 
 export const Home = () => {
   const { response, loading, error } = useFecth('/products');

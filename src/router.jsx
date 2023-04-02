@@ -8,6 +8,10 @@ import { Cart } from './components/Cart';
 
 export const router = createBrowserRouter([
   {
+    path: '/auth/login',
+    element: <Login />,
+  },
+  {
     path: '/',
     element: <TemplateApp />,
     children: [
@@ -28,9 +32,5 @@ export const router = createBrowserRouter([
         element: <Cart />,
       },
     ],
-  },
-  {
-    path: '/login',
-    element: <Login />,
   },
 ]);
